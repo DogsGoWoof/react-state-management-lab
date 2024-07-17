@@ -1,9 +1,29 @@
 ul {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
 }
 
 li {
   list-style: none;
   margin: 10px;
+  border: 1px solid white;
+  padding: 1dvh;
+  display: grid;
+  align-self: start;
+  /* align-self: start; */
+}
+
+li > * {
+  margin: 0 auto;
+}
+
+.rosters {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+  display: flex;
 }
