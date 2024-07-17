@@ -84,11 +84,6 @@ const App = () => {
   const [totalAgility, setTotalAgility] = useState(0);
 
   const handleFighter = (fighter) => {
-    // if (team.includes(fighter)) {
-    //   setTeam(team.filter((name) => fighter.name !== name));
-    //   setMoney(money + fighter.price);
-    //   return;
-    // }
     if (money >= fighter.price) {
       setTeam([...team, fighter]);
       setMoney(money - fighter.price);
